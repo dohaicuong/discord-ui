@@ -18,6 +18,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
+          
+      - name: Install Yarn
+        run: npm install -g yarn
 
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
