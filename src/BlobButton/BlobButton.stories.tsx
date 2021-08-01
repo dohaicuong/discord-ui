@@ -1,11 +1,12 @@
+import React from 'react'
 import { Meta } from '@storybook/react'
 
 import { Container } from '@material-ui/core'
 import { Add } from '@material-ui/icons'
 import { theme } from '../theme'
 
-import Paper from '../Paper'
-import BlobButton from '.'
+import { Paper } from '../Paper'
+import { BlobButton } from '.'
 
 export default {
   title: 'Components/BlobButton',

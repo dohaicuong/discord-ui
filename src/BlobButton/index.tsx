@@ -1,3 +1,4 @@
+import React from 'react'
 import { makeStyles } from '@material-ui/core'
 import clsx from 'clsx'
 import DiscordLogo from '../assets/DiscordLogo'
@@ -11,7 +12,7 @@ export type BlobButtonProps = React.HtmlHTMLAttributes<HTMLButtonElement> & {
   selected?: boolean
 }
 
-const BlobButton: React.FC<BlobButtonProps> = (props) => {
+export const BlobButton: React.FC<BlobButtonProps> = (props) => {
   const {
     image,
     icon = <DiscordLogo />,
@@ -38,7 +39,6 @@ const BlobButton: React.FC<BlobButtonProps> = (props) => {
     </button>
   )
 }
-export default BlobButton
 
 const useStyles = makeStyles(theme => ({
   button: ({ color = 'default', image, textColor: defaultTextColor }: BlobButtonProps) => {

@@ -1,3 +1,5 @@
+import React from 'react'
+
 const DiscordLogo = ({ style }: any) => (
   <svg style={style} aria-hidden="false" width="28" height="20" viewBox="0 0 28 20">
     <path

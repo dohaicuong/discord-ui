@@ -1,7 +1,8 @@
+import React from 'react'
 import { Container } from '@material-ui/core'
 import { Meta } from '@storybook/react'
 
-import Paper from '.'
+import { Paper } from '.'
 
 export default {
   title: 'Components/Paper',
