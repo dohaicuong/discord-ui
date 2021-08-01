@@ -4,6 +4,8 @@ on: [push]
 
 jobs:
   release:
+    runs-on: ubuntu-latest
+
     name: Build, lint, test and release
 
     steps:
